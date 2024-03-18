@@ -1,4 +1,13 @@
-<button class="flex items-center justify-center px-4 py-2 font-medium text-white">
+<script lang="ts">
+	export let size: 'small' | 'medium' = 'small';
+
+	const sizes = {
+		small: 'px-4 py-2',
+		medium: 'py-4 px-12 text-lg'
+	};
+</script>
+
+<button class={`flex items-center justify-center font-medium text-white ${sizes[size]}`}>
 	<slot>empty</slot>
 </button>
 
