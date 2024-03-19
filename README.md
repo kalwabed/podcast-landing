@@ -1,38 +1,44 @@
-# create-svelte
+# Podcast landing page
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+An unfinished podcast landing page from uistellar.com.
 
-## Creating a project
+## Demo
 
-If you're seeing this, you've probably already done this step. Congrats!
+[https://podcast-landing-gamma.vercel.app](https://podcast-landing-gamma.vercel.app/)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Original design
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+[uistellar.com](https://uistellar.com/products/Podcast-Landing-Page-Website/U2FsdGVkX18nSznPHcUXIQdwNu7aFNDkmgu%2BP3TVAXpZJc4rIUb3jkzSnI6HziA4)
 
-## Developing
+## Getting Started
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To get started running the project locally, please follow the steps below.
+
+First, clone the repository.
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+git clone https://github.com/kalwabed/podcast-landing.git
 ```
 
-## Building
-
-To create a production version of your app:
+Then, install dependencies and fetch data to your local machine. **Note that we use PNPM.**
 
 ```bash
-npm run build
+cd podcast-landing
+pnpm install
 ```
 
-You can preview the production build with `npm run preview`.
+Finally, run the development server.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+pnpm dev
+```
+
+Open [http://127.0.0.1:5173](http://127.0.0.1:5173) with your browser to see the result.
+
+## Deployment
+
+You can easily deploy to Vercel, or you can learn more from https://kit.svelte.dev/docs/adapters.
+
+## License
+
+MIT
